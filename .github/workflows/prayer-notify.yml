@@ -1,19 +1,16 @@
 name: VMM Prayer Time Notifications
 
 on:
-  # Run every day at 13:00 UTC = midnight AEST (UTC+11 summer) / 11pm AEST (UTC+10 winter)
-  # Adjust offset below if notifications arrive an hour early/late after daylight saving changes
   schedule:
-    - cron: '0 13 * * *'   # ← 13:00 UTC = midnight Melbourne AEDT (UTC+11)
-    # - cron: '0 14 * * *' # ← uncomment this line (and comment above) during AEST (UTC+10, Apr–Oct)
+    # Runs every hour — the script checks if a prayer falls within the next 60 mins
+    - cron: '0 * * * *'
 
-  # Allow manual trigger from GitHub Actions tab for testing
   workflow_dispatch:
 
 jobs:
   send-notifications:
     runs-on: ubuntu-latest
-    timeout-minutes: 1440   # 24h max — keeps runner alive all day to fire each prayer on time
+    timeout-minutes: 65
 
     steps:
       - name: Checkout repository
