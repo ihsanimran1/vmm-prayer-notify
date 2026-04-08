@@ -1,4 +1,4 @@
-# 🕌 VMM Prayer Time iPhone Notifications
+# 🕌 VMM Prayer Time Notifications
 
 Sends you a push notification to your iPhone at each of the 5 daily Adhan times,
 fetched from the same source as **awqat.com.au/vmm** (Virgin Mary Mosque, Hoppers Crossing).
