@@ -3,7 +3,7 @@
 Sends you a push notification to your iPhone at each of the 5 daily Adhan times,
 fetched from the same source as **awqat.com.au/vmm** (Virgin Mary Mosque, Hoppers Crossing).
 
-Uses **GitHub Actions** (free) + **Pushover** ($5 one-time iPhone app).
+Uses **GitHub Actions** (free) + **Pushover** ($7.99 AUD one-time iPhone app, 30 day free trial btw).
 
 <img src="assets/iphone.jpeg" width="200">
 ---
