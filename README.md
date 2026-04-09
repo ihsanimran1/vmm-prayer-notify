@@ -56,7 +56,7 @@ requirements.txt
 | `PUSHOVER_USER_KEY` | Your Pushover User Key (from Step 1) |
 | `PUSHOVER_API_TOKEN` | Your app API Token (from Step 2) |
 
-<img src="assets/api.jpeg" width="400">
+<img src="assets/api.jpeg" width="700">
 
 ### Step 6 — Test it manually
 
@@ -65,7 +65,7 @@ requirements.txt
 3. Click **Run workflow** → **Run workflow**
 4. Watch the logs — you should get a test notification on your iPhone within seconds ✅
 
-<img src="assets/pushover.jpeg" width="400">
+<img src="assets/pushover.jpeg" width="700">
 
 ---
 
