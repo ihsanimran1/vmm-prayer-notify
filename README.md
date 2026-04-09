@@ -56,12 +56,16 @@ requirements.txt
 | `PUSHOVER_USER_KEY` | Your Pushover User Key (from Step 1) |
 | `PUSHOVER_API_TOKEN` | Your app API Token (from Step 2) |
 
+<img src="assets/api.jpeg" width="400">
+
 ### Step 6 — Test it manually
 
 1. Go to **Actions** tab in your repo
 2. Click **VMM Prayer Time Notifications** in the left sidebar
 3. Click **Run workflow** → **Run workflow**
 4. Watch the logs — you should get a test notification on your iPhone within seconds ✅
+
+<img src="assets/pushover.jpeg" width="400">
 
 ---
 
@@ -75,6 +79,7 @@ Every day at midnight Melbourne time, GitHub runs the script which:
 
 The GitHub Actions runner stays alive all day (up to 24h) to fire each notification on time.
 
+<img src="assets/github_actions.jpeg" width="500">
 ---
 
 ## Daylight Saving Adjustment
