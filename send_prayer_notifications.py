@@ -21,6 +21,7 @@ METHOD   = 3  # Muslim World League — same as VMM
 TIMEZONE = "Australia/Melbourne"
 
 PRAYERS = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"]
+SUMMARY_PRAYERS = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha", "Sunset"]
 
 def fetch_prayer_times():
     tz = pytz.timezone(TIMEZONE)
@@ -54,12 +55,11 @@ def main():
     now = datetime.now(tz)
     timings = fetch_prayer_times()
 
-    # --test flag: send a test notification immediately with today's full schedule
-    if "--test" in sys.argv:
-        send_notification(
-            "VMM setup is working!",
-            "Today's times:\n" + "\n".join(f"{p}: {timings[p][:5]}" for p in PRAYERS)
-        )
+    # --summary flag: send today's full daily summary
+    if "--summary" in sys.argv or "--test" in sys.argv:
+        title = "Today's prayer times" if "--summary" in sys.argv else "VMM setup is working!"
+        message = "\n".join(f"{p}: {timings[p][:5]}" for p in SUMMARY_PRAYERS)
+        send_notification(title, message)
         return
 
     # Normal run: find the next prayer within the next hour
