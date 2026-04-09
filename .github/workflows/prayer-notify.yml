@@ -4,6 +4,8 @@ on:
   schedule:
     # Runs every hour — the script checks if a prayer falls within the next 60 mins
     - cron: '0 * * * *'
+    # Daily summary at 4 AM Melbourne time (17:00 UTC AEDT / 18:00 UTC AEST)
+    - cron: '0 17 * * *'
 
   workflow_dispatch:
     inputs:
@@ -37,6 +39,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             python send_prayer_notifications.py --test
+          elif [ "${{ github.event.schedule }}" = "0 17 * * *" ]; then
+            python send_prayer_notifications.py --summary
           else
             python send_prayer_notifications.py
           fi
