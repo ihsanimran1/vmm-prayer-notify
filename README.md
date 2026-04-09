@@ -5,6 +5,7 @@ fetched from the same source as **awqat.com.au/vmm** (Virgin Mary Mosque, Hopper
 
 Uses **GitHub Actions** (free) + **Pushover** ($5 one-time iPhone app).
 
+![Pushover notification](images/iphone.png)
 ---
 
 ## Setup (15–20 min, one time only)
