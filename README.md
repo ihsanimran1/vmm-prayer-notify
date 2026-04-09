@@ -12,7 +12,7 @@ Uses **GitHub Actions** (free) + **Pushover** ($7.99 AUD one-time iPhone app, 30
 
 ### Step 1 — Install Pushover on your iPhone
 
-1. Go to the App Store → search **Pushover** → buy it ($5 one-time, no subscription)
+1. Go to the App Store → search **Pushover** → buy it ($7.99 AUD one-time, no subscription)
 2. Open it and create a free account at https://pushover.net
 3. After logging in, you'll see your **User Key** on the dashboard — copy it
 
