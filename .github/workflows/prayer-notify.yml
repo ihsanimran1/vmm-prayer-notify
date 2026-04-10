@@ -3,7 +3,7 @@ name: VMM Prayer Time Notifications
 on:
   schedule:
     # Runs every hour — the script checks if a prayer falls within the next 60 mins
-    - cron: '0 * * * *'
+    - cron: '0,30 * * * *'
     # Daily summary at 4 AM Melbourne time (17:00 UTC AEDT / 18:00 UTC AEST)
     - cron: '0 17 * * *'
 
