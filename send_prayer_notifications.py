@@ -67,7 +67,7 @@ def main():
         prayer_dt = parse_time(timings[prayer])
         diff = (prayer_dt - now).total_seconds()
 
-        if 0 < diff <= 3600:
+        if 0 < diff <= 5400:
             print(f"{prayer} is in {int(diff)}s — waiting...")
             time.sleep(diff)
             send_notification(
